@@ -1,0 +1,39 @@
+/*Title*/
+
+body > h1 {
+    text-align: center;
+}
+
+/*Controls*/
+#controls {
+    border: black .2em solid;
+    border-radius: .2em;
+    width: 20%;
+}
+
+#controls li {
+    float: left;
+    list-style-type: none;
+    border: grey .2em solid;
+    margin: 1.5em;
+    border-radius: .2em;
+}
+
+#controls li:hover {
+    background-color: lightgray;
+}
+
+#controls li:active {
+    background-color: darkgray;
+}
+
+#info-pane {
+    overflow: hidden;
+    width: 80%;
+    height: 1em;
+    background-color: orange;
+}
+#playtime {
+    position: relative;
+    right: 1px;
+}
