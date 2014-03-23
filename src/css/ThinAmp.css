@@ -15,7 +15,7 @@ body > h1 {
     float: left;
     list-style-type: none;
     border: grey .2em solid;
-    margin: 1.5em;
+    margin: 0.5em;
     border-radius: .2em;
 }
 
@@ -33,7 +33,38 @@ body > h1 {
     height: 1em;
     background-color: orange;
 }
+
+#song-info {
+    
+}
+
+.marquee {
+    -webkit-transition-property: top, left;
+    transition-property: top, left;
+    -webkit-transition-duration: 3s;
+    transition-duration: 3s;
+    -webkit-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    left: 20px;
+    top: 0px;
+}
 #playtime {
     position: relative;
     right: 1px;
+}
+
+/*Equalizer*/
+#equalizer {
+    display: inline-block;
+    height: 5em;
+}
+.eq_slider {
+    margin-left: .7 em;
+    margin-right: .7 em;
+    display: inline-block;
+    width:1em;
+    height:1.5em;
+    background-color: black;
+    border-radius: 0.2em;
+    color: lightgray;
 }
