@@ -7,26 +7,22 @@
         <title>ThinAmp - Browser Based Audio Player</title>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+        <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.4.custom.min.css" />
 
         <link rel="stylesheet" href="css/ThinAmp.css"/>
         <!-- Scripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="js/jquery-1.11.0.js"></script>
+        <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
 
         <script src="js/ThinAmp.js"></script>
     </head>
     <body>
-        <audio autoplay id="player">
-            <source src="../audio/Allegro.mp3">
-            <source src="../audio/MenuettoAndTrioallegretto.mp3">
-            <source src="../audio/Romanzeandante.mp3">
-            <source src="../audio/Rondoallegro.mp3">
+        <audio id="player">
         </audio>
         <h1>ThinAmp</h1>
         <div id="controls">
             <div id="info-pane">
-
+				<div id="song-info"></div>
             </div>
             <div id="playtime"></div>
             <ul>
@@ -37,13 +33,15 @@
                 <li id="previous">Previous</li>
             </ul>
         </div>
+        <ol id="playlist">
+        </ol>
 
         <div id="equalizer">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="eq_slider">1</div>
+            <div class="eq_slider">2</div>
+            <div class="eq_slider">3</div>
+            <div class="eq_slider">4</div>
+            <div class="eq_slider">5</div>
         </div>
     </body>
 </html>
