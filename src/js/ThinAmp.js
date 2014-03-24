@@ -50,6 +50,25 @@ function updateTime() {
 
 }
 
+function setSongInfo() {
+    "use strict";
+    
+    $("#song-info").text("TEST");
+}
+
+function resetMarquee() {
+    "use strict";
+    var $info = $("#song-info");
+    
+    $info.removeClass("marquee");
+    
+    $info.css("left", $("#info-pane").width());
+    
+    $info.addClass("marquee");
+    
+    $info.css("left", -$info.width());
+}
+
 $(document).ready(function () {
     "use strict";
 
@@ -127,7 +146,7 @@ $(document).ready(function () {
 
     //$("#playlist").sortable();
     
-    $("#playlist > li").click(function () {
+    $("#playlist > li").dblclick(function () {
         
         trackNum = $(this).index();
         
@@ -139,4 +158,5 @@ $(document).ready(function () {
     });
     $(".eq_slider").draggable({axis: "y", containment:"parent"});
     
+    setSongInfo();
 });
